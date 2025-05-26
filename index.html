@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yt-dlp API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6347; /* Tomato color */
+        }
+        h2 {
+            color: #4682b4; /* Steel Blue color */
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .shaking-text {
+            font-size: 24px;
+            font-weight: bold;
+            animation: shake 0.5s infinite;
+            text-align: center;
+            color: #ff4500; /* Orange Red color */
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px); }
+            25% { transform: translate(-1px, -2px); }
+            50% { transform: translate(-1px, 2px); }
+            75% { transform: translate(1px, 2px); }
+            100% { transform: translate(1px, -1px); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌟 yt-dlp API 🌟</h1>
+
+    <p>Welcome to the <strong>yt-dlp API</strong>! This is a simple Flask API that allows you to download videos using the powerful <code>yt-dlp</code> tool.</p>
+
+    <h2>⚡️ Features</h2>
+    <ul>
+        <li><strong>Download Videos</strong>: Easily download videos from various platforms.</li>
+        <li><strong>Simple API</strong>: Use a straightforward API endpoint to initiate downloads.</li>
+        <li><strong>Modular Code</strong>: Well-structured code for easy maintenance and enhancements.</li>
+    </ul>
+
+    <h2>📦 Installation</h2>
+    <p>1. Clone the repository:</p>
+    <pre>git clone https://github.com/yourusername/yt-dlp-api.git</pre>
+    <pre>cd yt-dlp-api</pre>
+    <p>2. Create a virtual environment and activate it:</p>
+    <pre>python -m venv venv</pre>
+    <pre>source venv/bin/activate  # On Windows use `venv\Scripts\activate`</pre>
+    <p>3. Install the required packages:</p>
+    <pre>pip install -r requirements.txt</pre>
+
+    <h2>🚀 Usage</h2>
+    <p>Run the application:</p>
+    <pre>python run.py</pre>
+
+    <h2>📡 API Endpoint</h2>
+    <p><strong>POST /download</strong></p>
+    <p><strong>Request Body:</strong></p>
+    <pre>{
+    "url": "https://www.youtube.com/watch?v=example"
+}</pre>
+    <p><strong>Response:</strong></p>
+    <pre>{
+    "message": "Download completed",
+    "title": "Video Title"
+}</pre>
+
+    <h2>🎨 Visuals</h2>
+    <img src="https://yt-dlp.org/logo.png" alt="yt-dlp Logo">
+
+    <h2>💡 Note</h2>
+    <p>Make sure you have the necessary permissions to download videos from the provided URLs.</p>
+
+    <div class="shaking-text">🔥 Amazing Features Await You! 🔥</div>
+
+</body>
+</html>
