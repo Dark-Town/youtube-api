@@ -1,0 +1,14 @@
+{
+  "name": "youtube-api-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "googleapis": "^125.0.0",
+    "ytdl-core": "^4.11.3"
+  }
+}

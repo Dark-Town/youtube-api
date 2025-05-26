@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Search & Download</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>YouTube Video Downloader</h1>
+  <form method="POST" action="/search">
+    <input type="text" name="query" placeholder="Search for videos" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <% if (videos) { %>
+    <div class="results">
+      <% videos.forEach(video => { %>
+        <div class="video">
+          <img src="<%= video.snippet.thumbnails.default.url %>">
+          <p><%= video.snippet.title %></p>
+          <a href="/download?videoId=<%= video.id.videoId %>">Download</a>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>
+</body>
+</html>
